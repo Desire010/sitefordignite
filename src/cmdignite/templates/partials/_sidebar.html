@@ -42,7 +42,7 @@
         <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
             {% with request.resolver_match.url_name as url_name %}
             <a href="/" class="navbar-brand">
-                <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"><strong></i>CM DIGNITE</h1></strong>
+                <h1 class="m-0 text-uppercase text-primary"><img src="{% static 'img/favicon.ico'%}" width="72px" height="50" alt="icon"><strong></i>  CM DIGNITE</h1></strong>   
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
                     <a href="/about" class="nav-item nav-link {% if url_name == 'about' %}active{% endif %}">A propos</a>
                     <a href="/service" class="nav-item nav-link {% if url_name == 'service' %}active{% endif %} ">Services</a>
                     <!-- <a href="price.html" class="nav-item nav-link">Pricing</a> -->
-                    <div class="nav-item dropdown">
+                    {% comment %} <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
                             <a href="blog.html" class="dropdown-item">Blog Grid</a>
@@ -63,7 +63,7 @@
                             <a href="appointment.html" class="dropdown-item">Appointment</a>
                             <a href="search.html" class="dropdown-item">Search</a>
                         </div>
-                    </div>
+                    </div> {% endcomment %}
                     <a href="/contact" class="nav-item nav-link {% if url_name == 'contact' %}active{% endif %}">Contact</a>
                 </div>
             </div>
