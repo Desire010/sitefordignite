@@ -75,24 +75,24 @@ WSGI_APPLICATION = 'cmdignite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'ophir_db_lqp9',
-#         'USER': 'desire',
-#         'PASSWORD': 'ohsx3hxeq52KViWScbOTDLpqDUMnTTFz',
-#         'HOST': 'dpg-cp2k176v3ddc73cnf1q0-a.oregon-postgres.render.com',
-#         'PORT': '5432',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'desire',
+        'USER': 'desire_user',
+        'PASSWORD': 'b81a8ZhOMHsKK3SS7fOcfWhAdJqOaACE',
+        'HOST': 'dpg-csl22tq3esus73fv7j5g-a.oregon-postgres.render.com',
+        'PORT': '5432',
+    }
+}
+# postgresql://desire_user:b81a8ZhOMHsKK3SS7fOcfWhAdJqOaACE@dpg-csl22tq3esus73fv7j5g-a.oregon-postgres.render.com/desire
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
